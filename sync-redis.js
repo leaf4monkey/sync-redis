@@ -21,7 +21,7 @@ let initClient = function (_client, options = {}) {
             return client;
         }
         Redis.globalEvents.onInitialization && Redis.globalEvents.onInitialization(client);
-        options.onInitialization && options.onInitialization(_client);
+        options.onInitialization && options.onInitialization(client);
         client.initialized = true;
     };
 

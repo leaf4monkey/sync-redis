@@ -1,6 +1,6 @@
 Package.describe({
   name: 'leaf4monkey:sync-redis',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'A synced redis client.',
   // URL to the Git repository containing the source code for this package.
@@ -21,7 +21,7 @@ Package.onUse(function(api) {
   api.use([
     'ecmascript',
     'ejson',
-    'leaf4monkey:prototype-extensions',
+    'leaf4monkey:prototype-extensions@0.1.0',
     'mongo'
   ], 'server');
   api.mainModule('sync-redis.js', 'server');
