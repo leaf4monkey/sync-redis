@@ -8,7 +8,6 @@ import commands from 'redis-commands';
 import _ from 'lodash';
 import {Meteor} from 'meteor/meteor';
 import {Mongo, MongoInternals} from 'meteor/mongo';
-console.log('commands:', commands.list.join(','));
 
 let {REDIS_URL} = process.env;
 let wrapAsync = Meteor.wrapAsync || Meteor._wrapAsync;
